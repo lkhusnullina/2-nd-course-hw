@@ -65,13 +65,13 @@ a {
     }
 }
 
-.choose {
-    margin-bottom: 128px;
-} 
-
 .games {
-    display: flex;
-    gap: 32px;
+    margin-bottom: 128px;
+    
+    &__box {
+        display: flex;
+        gap: 32px;
+    }
 
     &__item {
         padding: 32px;
@@ -103,7 +103,7 @@ a {
 
         &:hover {
             cursor: pointer;
-            border: 3px solid #44D2FF;
+            outline: 3px solid #44D2FF;
         }
     }
 }

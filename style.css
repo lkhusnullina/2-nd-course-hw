@@ -58,11 +58,10 @@ a {
   cursor: pointer;
 }
 
-.choose {
+.games {
   margin-bottom: 128px;
 }
-
-.games {
+.games__box {
   display: flex;
   gap: 32px;
 }
@@ -91,5 +90,5 @@ a {
 }
 .games__item:hover {
   cursor: pointer;
-  border: 3px solid #44D2FF;
+  outline: 3px solid #44D2FF;
 }/*# sourceMappingURL=style.css.map */
