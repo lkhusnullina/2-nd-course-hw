@@ -34,7 +34,7 @@ a {
 }
 
 .header {
-    width: 788px;
+    max-width: 788px;
 
     &__title {
         margin-bottom: 32px;
@@ -44,7 +44,7 @@ a {
 
     &__text {
         margin-bottom: 44px;
-        width: 481px;
+        max-width: 481px;
         font-size: 18px;
         font-weight: 300;
     }
@@ -107,3 +107,6 @@ a {
         }
     }
 }
+
+@import 'tablet';
+@import 'mobile';
