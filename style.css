@@ -31,6 +31,21 @@ a {
   background-position: center;
 }
 
+.button {
+  display: block;
+  width: 234px;
+  padding: 13px 74px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 30px;
+  background: #9C0332;
+}
+.button:hover {
+  background: #EB443F;
+  cursor: pointer;
+}
+
 .header {
   max-width: 788px;
 }
@@ -44,18 +59,6 @@ a {
   max-width: 481px;
   font-size: 18px;
   font-weight: 300;
-}
-.header__button {
-  padding: 13px 74px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
-  border-radius: 30px;
-  background: #9C0332;
-}
-.header__button:hover {
-  background: #EB443F;
-  cursor: pointer;
 }
 
 .games {
@@ -93,6 +96,30 @@ a {
   outline: 3px solid #44D2FF;
 }
 
+.game {
+  padding-top: 233px;
+  padding-bottom: 233px;
+}
+.game__block {
+  display: flex;
+  align-items: center;
+  gap: 135px;
+}
+.game__info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.game__name {
+  font-size: 48px;
+  font-weight: 700;
+}
+.game__description {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 393px);
@@ -105,6 +132,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .game {
+    padding-top: 57px;
+  }
+  .game__block {
+    flex-direction: column;
   }
 }
 @media (min-width: 768px) and (max-width: 833px) {
@@ -121,6 +154,9 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .button {
+    margin: 0 auto;
+  }
   .header {
     display: flex;
     flex-direction: column;
@@ -135,5 +171,27 @@ a {
   }
   .games__item {
     width: 343px;
+  }
+  .game {
+    padding-top: 57px;
+    padding-bottom: 85px;
+  }
+  .game__block {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .game__info {
+    text-align: center;
+  }
+  .game__name {
+    font-size: 32px;
+  }
+  .game__description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game__img {
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */

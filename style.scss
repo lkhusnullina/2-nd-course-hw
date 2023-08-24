@@ -1,4 +1,5 @@
 $colorMain: #FFF;
+$colorButton: #9C0332;
 
 * {
     margin: 0;
@@ -33,6 +34,23 @@ a {
     background-position: center;
 }
 
+.button {
+    display: block;
+    width: 234px;
+    padding: 13px 74px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+
+    border-radius: 30px;
+    background: $colorButton;
+
+    &:hover {
+        background: #EB443F;
+        cursor: pointer;
+    }
+}
+
 .header {
     max-width: 788px;
 
@@ -47,21 +65,6 @@ a {
         max-width: 481px;
         font-size: 18px;
         font-weight: 300;
-    }
-
-    &__button {
-        padding: 13px 74px;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: normal;
-
-        border-radius: 30px;
-        background: #9C0332;
-
-        &:hover {
-            background: #EB443F;
-            cursor: pointer;
-        }
     }
 }
 
@@ -105,6 +108,34 @@ a {
             cursor: pointer;
             outline: 3px solid #44D2FF;
         }
+    }
+}
+
+.game {
+    padding-top: 233px;
+    padding-bottom: 233px;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: 135px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__name {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    &__description {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
     }
 }
 
