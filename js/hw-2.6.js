@@ -28,7 +28,7 @@ for (let i = 0; i < 3; i++) {
 	arr11[i] = []; 
 	
 	for (let j = 0; j < 3; j++) {
-		arr11[i].push(j + 1); 
+		arr11[i].push(1); 
 	}
 }
 
@@ -133,7 +133,7 @@ console.log('четные значения',randomPositive);
 
 let arr12 = [];
 for (let i = 0; i < 6; i++) {
-    arr12.push(Math.floor(Math.random() * 10));
+    arr12.push((Math.floor(Math.random() * 10)) + 1);
 }
 console.log('массив', arr12);
 let result = arr12.reduce((a,b) => a + b);
