@@ -118,6 +118,10 @@ a {
         display: flex;
         align-items: center;
         gap: 135px;
+
+        &_middle {
+            flex-direction: row-reverse;
+        }
     }
 
     &__info {
