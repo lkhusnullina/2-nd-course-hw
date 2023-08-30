@@ -6,14 +6,16 @@ console.log(str.toLocaleUpperCase());
 // задание 2
 
 function searchStart(array, str) {
-    array.forEach((arr) => {
-        if (arr.toLowerCase().includes(str.toLowerCase())) {
-            console.log(arr);
+    let newArr = [];
+    array.forEach((el) => {
+        if (el.toLowerCase().includes(str.toLowerCase())) {
+            newArr.push(el);
         }
     })
+    return newArr
 }
 
-searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
 
 // задание 3
 
@@ -49,15 +51,16 @@ console.log('рандомное число от 1 до 10 =', randomNumber());
 
 // задание 6
 
-// function getRandomArrNumbers(number) {
-//     let arr = []
-//     for (let i = 0; i < number; i++) {
-//         arr.push((Math.floor(Math.random() * 10) + 1));
-//     }
-//     console.log(arr);
-// }
+function getRandomArrNumbers(number) {
+    let arr = []
+    for (let i = 0; i < number; i++) {
+        arr.push((Math.floor(Math.random() * number)));
+    }
+    arr.length = Math.floor( number / 2)
+    return arr;
+}
+console.log('задание 6',getRandomArrNumbers(10));
 
-// getRandomArrNumbers(12)
 
 // задание 7
 
@@ -121,7 +124,7 @@ function randomFruit() {
     let fruitLast = prompt('Чему равнялся последний элемент массива?');
     
     if ((oneFruit === fruitOne.toUpperCase()) && (lastFruit === fruitLast.toUpperCase())) {
-      alert('Поздравляем Вы угадали оба элемента')
+      alert('Поздравляем Вы угадали оба элемента!')
     } else if ((oneFruit === fruitOne.toUpperCase()) || (lastFruit === fruitLast.toUpperCase())) {
        alert('Вы были близки к победе!')
     } else {
