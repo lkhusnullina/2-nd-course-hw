@@ -104,6 +104,9 @@ a {
   align-items: center;
   gap: 135px;
 }
+.game__block_middle {
+  flex-direction: row-reverse;
+}
 .game__info {
   display: flex;
   flex-direction: column;
